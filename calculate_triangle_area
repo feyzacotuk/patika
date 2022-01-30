@@ -1,0 +1,23 @@
+package com.company;
+import javax.swing.text.Style;
+import java.util.Scanner;
+import static java.lang.Math.*;
+public class Main {
+
+    public static void main(String[] args) {
+    double k1,k2,k3,u,alan;
+    Scanner inp = new Scanner(System.in );
+
+    System.out.println("Üçgenin kenarlarını giriniz:");
+        System.out.println("kenar 1:");  k1=inp.nextDouble();
+        System.out.println("kenar 2:");   k2=inp.nextDouble();
+        System.out.println("kenar 3 :");  k3=inp.nextDouble();
+        u= (k1+k2+k3)/2;
+        alan=Math.sqrt(u*(u-k1)*(u-k2)*(u-k3));
+        System.out.println("Üçgenin alanı ="+alan);
+
+
+
+    }
+
+    }
