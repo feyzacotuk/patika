@@ -1,0 +1,24 @@
+package com.company;
+import javax.swing.text.Style;
+import java.util.Scanner; // If you want to take a data from user we have to add this
+import static java.lang.Math.*; 
+public class Main {
+
+    public static void main(String[] args) {
+        double r; // We described the r for the entered a data by user
+        double pi = 3.14; // Also described the pi for using inside the formula
+
+        Scanner inp = new Scanner(System.in); // When we want to take a data from user we described the inp(etc.) 
+
+        System.out.print("Enter the radius of the square :"); // When we want to writing output a screen we use this
+
+        r = inp.nextDouble(); // Equiling data
+
+        double area = pi * r * r;
+        double crcm = 2 * pi * r;
+
+        System.out.println("Area of the square = " + area);
+        System.out.println("Circumference of the square = " + crcm);
+    }
+
+}
